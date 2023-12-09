@@ -1,0 +1,211 @@
+:root{
+    --header1_color: #FFCBA4; /* Deep Peach */
+    --header2_color: #FBD5AB; /* Coral Peach */
+    --header3_color: #FF9A8A; /* Peach Pink */
+    --keyword_color: #FF775E; /* Peach Orange */
+    --string_color: #D98586; /* Dark Peach */
+    --number_color: #FFD8B1; /* Light Peach */
+    --def_color: #FFE5B4; /* Peach */
+    --property_color: #F5CBA7; /* Peach Puff */
+    --builtin_color: #FAD7A0; /* Peach Nectar */
+    --comment_color: #FDEBD0; /* Peach Whip */
+    --comment_color_2: #F6DDCC; /* Peach Echo */
+    --operator_color: #F8C471; /* Sunflower */
+    --font_color: #F0B27A; /* Middlestone */
+    --variable2_color: #EB984E; /* Tiger Eye */
+    --box_color: #FDF2E9; /* Peach Pearl */
+}
+
+.cm-s-jupyter span.cm-variable-2{
+    color: var(--variable2_color);
+    font-style: italic; /* added property */
+}
+
+.cm-s-jupyter span.cm-variable{
+    color: var(--font_color);
+    font-weight: bold; /* added property */
+}
+.cm-s-jupyter span.cm-number{
+    color: var(--number_color);
+    font-size: 1.2em; /* added property */
+}
+
+.cm-s-jupyter span.cm-def {
+    color: var(--def_color);
+    text-decoration: underline; /* added property */
+}
+
+.cm-s-jupyter span.cm-keyword{
+    color: var(--keyword_color);
+    font-weight: lighter;
+    text-transform: uppercase; /* added property */
+}
+
+.cm-s-jupyter span.cm-property{
+    color: var(--property_color);
+    font-family: monospace; /* added property */
+}
+
+.cm-s-jupyter span.cm-builtin{
+    color: var(--builtin_color);
+    font-variant: small-caps; /* added property */
+}
+
+.cm-s-jupyter span.cm-string {
+    color: var(--string_color);
+    font-style: oblique; /* added property */
+}
+
+.cm-s-jupyter span.cm-comment{
+    color: var(--comment_color);
+    font-style: normal; /* added property */
+}
+
+.cm-s-jupyter span.cm-operator{
+    color: var(--operator_color);
+    font-size: 1.5em; /* added property */
+}
+
+body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
+    background-color: var(--box_color) !important;
+    border: 2px solid var(--header1_color); /* added property */
+}
+
+.highlight .s1 {
+    color: var(--string_color);
+}
+
+/* cm-string */
+.highlight .s2 {
+    color: var(--string_color);
+}
+
+/* cm-keyword */
+.highlight .k {
+    color: var(--keyword_color);
+    font-weight: lighter;
+}
+
+.highlight .kc{
+    color: var(--keyword_color);
+    font-weight: lighter;
+}
+
+/* cm-number */
+.highlight .mi{
+    color: var(--number_color);
+}
+
+/* cm-comment */
+.highlight .c1{
+    color: var(--comment_color);
+    font-weight: lighter;
+}
+
+.highlight .mf{
+    color: var(--number_color);
+}
+
+.highlight .sd{
+    color: var(--string_color);
+    font-weight: lighter;
+}
+
+/* cm-keyword */
+.highlight .ow {
+    color: var(--keyword_color);
+    font-weight: lighter;
+}
+
+/* cm-operator */
+.highlight .o{
+    color: var(--operator_color);
+}
+
+/* cm-keyword */
+.highlight .kn{
+    color: var(--keyword_color);
+    font-weight: lighter;
+}
+
+/* cm-builtin */
+.highlight .nb{
+    color: var(--builtin_color);
+}
+
+/* class keyword */
+.highlight .nc{
+    color: var(--def_color);
+    font-weight: lighter;
+}
+
+/* cm-def */ 
+.highlight .fm{
+    color: var(--def_color);
+}
+
+/* cm-keyword */
+.highlight .bp{
+    color: var(--keyword_color);
+}
+
+.highlight .si {
+  color: #BB6622;
+  font-weight: lighter;
+}
+
+/* cm-property */
+a.global_indexed_symbol{
+    color: var(--property_color);
+}
+
+/* cm-def */ 
+.highlight .nf{
+    color: var(--def_color);
+}
+
+/* self */
+.highlight .bp{
+    color: var(--variable2_color)
+}
+
+div.output_subarea.output_text{
+    padding: 16px;
+    width: 1000px;
+    box-shadow: 5px 5px 10px var(--comment_color_2); /* added property */
+}
+
+.jp-RenderedHTMLCommon :not(pre) > code{
+    background-color: transparent !important;
+}
+
+.insights {
+    line-height: 1.7em;
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+}
+
+div.output_subarea {
+    padding: 0px
+}
+
+div.output_area pre{
+    margin: 0px
+}
+
+div.output_area pre {
+    margin: 5px
+}
+
+
+div.input_area{
+    background-color: var(--box_color) !important;
+    border-radius: 10px; /* added property */
+}
